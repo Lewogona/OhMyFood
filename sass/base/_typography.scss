@@ -1,0 +1,17 @@
+@font-face{
+    font-family: "shrikhand";
+    src: url(police/shrikhand/Shrikhand-Regular.ttf);
+}
+
+@font-face{
+    font-family: "roboto";
+    src: url(police/roboto/Roboto-Regular.ttf);
+}
+
+h1 {
+    font-family: "shrikhand", Georgia, 'Times New Roman', Times, serif;
+}
+
+h2, h3{
+    font-family: "roboto", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

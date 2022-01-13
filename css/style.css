@@ -1,3 +1,72 @@
+body, div, h1, h2, h3, p, img, ul, li, header, footer, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#bloc-page {
+  margin: auto;
+  width: 992px;
+}
+@media screen and (max-width: 768px) {
+  #bloc-page {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  #bloc-page {
+    width: 100%;
+  }
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.contain {
+  object-fit: cover;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.restaurant-prev {
+  background-color: white;
+  width: 90%;
+  height: 200px;
+  border-radius: 15px;
+  box-shadow: 0px 3px 10px #d1d1d1;
+  overflow: hidden;
+}
+.restaurant-prev__image {
+  width: 100%;
+  height: 135px;
+  overflow: hidden;
+  border-radius: 15px 15px 0 0;
+}
+.restaurant-prev__body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
 /*# sourceMappingURL=style.css.map */
