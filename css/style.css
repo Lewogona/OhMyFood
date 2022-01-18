@@ -234,4 +234,18 @@ footer ul a .icon {
   width: 80%;
 }
 
+.button {
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  width: 220px;
+  height: 46px;
+  border-radius: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 5px 5px #d1d1d1;
+}
+.button a {
+  color: white;
+}
+
 /*# sourceMappingURL=style.css.map */
