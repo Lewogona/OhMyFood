@@ -184,11 +184,26 @@ footer ul a .icon {
 }
 .operation__step .card .icon {
   width: 50px;
+  margin-left: 10px;
   display: flex;
   justify-content: center;
 }
 .operation__step .card .icon i {
   color: grey;
+}
+
+.number {
+  background-color: #9356DC;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 27.5px;
+  left: 27.5px;
 }
 
 #reservation {
