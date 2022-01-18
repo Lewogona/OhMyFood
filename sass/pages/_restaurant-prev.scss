@@ -1,8 +1,17 @@
 @import "../utils/variables";
 
+#restaurants{
+    background-color: $background-colour;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 1000px;
+    padding: 20px;
+}
+
 .restaurant-prev {
     background-color: $background-colour-card;
-    width: 90%;
+    width: 100%;
     margin: auto;
     height: 200px;
     border-radius: 15px;
