@@ -1,0 +1,22 @@
+#operation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 400px;
+}
+
+.operation__step{
+    display: flex;
+    flex-direction: row;
+    & .card{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: $background-colour;
+        height: 50px;
+        width: 85%;
+        margin: auto;
+        border-radius: 15px;
+        box-shadow: 0px 3px 10px rgb(209, 209, 209);
+    }
+}
