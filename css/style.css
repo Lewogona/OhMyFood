@@ -243,6 +243,7 @@ footer ul a .icon {
   justify-content: center;
   align-items: center;
   box-shadow: 0px 5px 5px #d1d1d1;
+  color: white;
 }
 .button a {
   color: white;
