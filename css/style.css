@@ -58,7 +58,7 @@ h2, h3, footer ul a {
   font-family: "roboto", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-header {
+#head-page {
   display: flex;
   width: 100%;
   height: 60px;
