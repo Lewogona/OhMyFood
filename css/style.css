@@ -54,8 +54,14 @@ h1, footer p {
   font-family: "shrikhand", Georgia, "Times New Roman", Times, serif;
 }
 
-h2, h3, footer ul a {
+h2 {
   font-family: "roboto", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
+}
+
+h3, footer ul a {
+  font-family: "roboto", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 16px;
 }
 
 #head-page {
@@ -97,8 +103,14 @@ h1, footer p {
   font-family: "shrikhand", Georgia, "Times New Roman", Times, serif;
 }
 
-h2, h3, footer ul a {
+h2 {
   font-family: "roboto", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
+}
+
+h3, footer ul a {
+  font-family: "roboto", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 16px;
 }
 
 footer {
@@ -127,6 +139,67 @@ footer ul a {
 footer ul a .icon {
   margin-right: 10px;
   width: 20px;
+}
+
+#head-image {
+  height: 270px;
+}
+
+@font-face {
+  font-family: "shrikhand";
+  src: url(../../police/shrikhand/Shrikhand-Regular.ttf);
+}
+@font-face {
+  font-family: "roboto";
+  src: url(../../police/roboto/Roboto-Regular.ttf);
+}
+h1, footer p {
+  font-family: "shrikhand", Georgia, "Times New Roman", Times, serif;
+}
+
+h2 {
+  font-family: "roboto", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
+}
+
+h3, footer ul a {
+  font-family: "roboto", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 16px;
+}
+
+#menu {
+  background-color: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 15px;
+  height: 1000px;
+}
+#menu header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.dish {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 250px;
+}
+.dish .card {
+  background-color: white;
+  box-shadow: 0px 3px 10px #d1d1d1;
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.dish .card__body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 #restaurants {

@@ -1,0 +1,37 @@
+@import "../utils/variables";
+@import "../base/typography";
+
+#menu {
+    background-color: $background-colour;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px;
+    height: 1000px;
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.dish {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 250px;
+    .card {
+        background-color: $background-colour-card;
+        box-shadow: 0px 3px 10px rgb(209, 209, 209);
+        border-radius: 15px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &__body {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}
