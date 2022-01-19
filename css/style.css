@@ -222,16 +222,15 @@ footer ul a .icon {
   height: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  padding: 40px;
 }
 #reservation h2 {
   text-align: center;
-  width: 70%;
 }
 #reservation p {
   text-align: center;
-  width: 80%;
 }
 
 .button {
