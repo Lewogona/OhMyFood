@@ -67,10 +67,22 @@ h2, h3, footer ul a {
   align-items: center;
   box-shadow: 0px 3px 10px #d1d1d1;
 }
+#head-page .icon {
+  position: relative;
+  left: -60px;
+}
+#head-page .icon i {
+  color: #555555;
+}
 
 #logo {
   width: 180px;
   height: 35px;
+}
+
+.fa-arrow-left {
+  font-weight: bold;
+  font-size: 20px;
 }
 
 @font-face {
