@@ -7,10 +7,16 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    border-radius: 40px 40px 0 0;
+    position: relative;
+    top: -40px;
     header {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
     }
     .button {
     margin: 30px;
