@@ -45,11 +45,11 @@ img {
 
 @font-face {
   font-family: "shrikhand";
-  src: url(../../police/shrikhand/Shrikhand-Regular.ttf);
+  src: url(../police/shrikhand/Shrikhand-Regular.ttf);
 }
 @font-face {
   font-family: "roboto";
-  src: url(../../police/roboto/Roboto-Regular.ttf);
+  src: url(../police/roboto/Roboto-Regular.ttf);
 }
 h1, footer p {
   font-family: "shrikhand", Georgia, "Times New Roman", Times, serif;
@@ -99,11 +99,11 @@ p {
 
 @font-face {
   font-family: "shrikhand";
-  src: url(../../police/shrikhand/Shrikhand-Regular.ttf);
+  src: url(../police/shrikhand/Shrikhand-Regular.ttf);
 }
 @font-face {
   font-family: "roboto";
-  src: url(../../police/roboto/Roboto-Regular.ttf);
+  src: url(../police/roboto/Roboto-Regular.ttf);
 }
 h1, footer p {
   font-family: "shrikhand", Georgia, "Times New Roman", Times, serif;
@@ -158,11 +158,11 @@ footer ul a .icon {
 
 @font-face {
   font-family: "shrikhand";
-  src: url(../../police/shrikhand/Shrikhand-Regular.ttf);
+  src: url(../police/shrikhand/Shrikhand-Regular.ttf);
 }
 @font-face {
   font-family: "roboto";
-  src: url(../../police/roboto/Roboto-Regular.ttf);
+  src: url(../police/roboto/Roboto-Regular.ttf);
 }
 h1, footer p {
   font-family: "shrikhand", Georgia, "Times New Roman", Times, serif;
@@ -227,6 +227,12 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.title {
+  font-family: "roboto", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  margin: 15px;
 }
 
 .price {
