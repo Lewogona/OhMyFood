@@ -1,3 +1,6 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
 // ---------- reset CSS
 
 body, div, h1, h2, h3, h4, p, img, ul, li, header, footer, section{
@@ -25,12 +28,9 @@ ul{
 #bloc-page{
     background-color: $background-colour;
     margin: auto;
-    width: 992px;
-    @include mobile-only{
-        width: 100%;
-    }
-    @include tablet-only{
-        width: 100%;
+    width: 100%;
+    @include desktop-only{
+        width: 992px;
     }
 }
 
