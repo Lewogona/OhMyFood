@@ -9,20 +9,27 @@
 }
 
 h1 {
-    font-family: "shrikhand", Georgia, 'Times New Roman', Times, serif;
+    @include title-and-logo-only;
+    font-size: 28px;
 }
 
 h2 {
-    font-family: "roboto", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
+    @include general-typo;
+    font-size: 26px;
 }
 
 h3 {
-    font-family: "roboto", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 16px;
+    @include general-typo;
+    font-size: 19px;
 }
 
-p {
-    font-family: "roboto", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 14px;
+h4 {
+    @include general-typo;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+p, div {
+    @include general-typo;
+    font-size: 17px;
 }

@@ -1,4 +1,4 @@
-body, div, h1, footer p, h2, h3, footer ul a, p, img, ul, li, header, footer, section {
+body, div, h1, h2, h3, h4, p, img, ul, li, header, footer, section {
   margin: 0;
   padding: 0;
   border: 0;
@@ -51,23 +51,30 @@ img {
   font-family: "roboto";
   src: url(../police/roboto/Roboto-Regular.ttf);
 }
-h1, footer p {
+h1 {
   font-family: "shrikhand", Georgia, "Times New Roman", Times, serif;
+  font-size: 28px;
 }
 
 h2 {
   font-family: "roboto", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  font-size: 20px;
+  font-size: 26px;
 }
 
-h3, footer ul a {
+h3 {
   font-family: "roboto", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  font-size: 16px;
+  font-size: 19px;
 }
 
-p {
+h4 {
   font-family: "roboto", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+p, div {
+  font-family: "roboto", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 17px;
 }
 
 #head-page {
@@ -97,33 +104,6 @@ p {
   font-size: 20px;
 }
 
-@font-face {
-  font-family: "shrikhand";
-  src: url(../police/shrikhand/Shrikhand-Regular.ttf);
-}
-@font-face {
-  font-family: "roboto";
-  src: url(../police/roboto/Roboto-Regular.ttf);
-}
-h1, footer p {
-  font-family: "shrikhand", Georgia, "Times New Roman", Times, serif;
-}
-
-h2 {
-  font-family: "roboto", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  font-size: 20px;
-}
-
-h3, footer ul a {
-  font-family: "roboto", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  font-size: 16px;
-}
-
-p {
-  font-family: "roboto", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  font-size: 14px;
-}
-
 footer {
   background-color: #353535;
   display: flex;
@@ -133,7 +113,9 @@ footer {
   padding: 20px;
 }
 footer p {
+  font-family: "shrikhand", Georgia, "Times New Roman", Times, serif;
   color: white;
+  font-size: 20px;
 }
 footer ul {
   display: flex;
@@ -164,23 +146,30 @@ footer ul a .icon {
   font-family: "roboto";
   src: url(../police/roboto/Roboto-Regular.ttf);
 }
-h1, footer p {
+h1 {
   font-family: "shrikhand", Georgia, "Times New Roman", Times, serif;
+  font-size: 28px;
 }
 
 h2 {
   font-family: "roboto", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  font-size: 20px;
+  font-size: 26px;
 }
 
-h3, footer ul a {
+h3 {
   font-family: "roboto", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  font-size: 16px;
+  font-size: 19px;
 }
 
-p {
+h4 {
   font-family: "roboto", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+p, div {
+  font-family: "roboto", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 17px;
 }
 
 #menu {
@@ -314,6 +303,7 @@ p {
   margin: auto;
   border-radius: 25px;
   box-shadow: 0px 3px 10px #d1d1d1;
+  font-weight: bold;
 }
 .operation__step .card .icon {
   width: 50px;
@@ -331,6 +321,7 @@ p {
   width: 20px;
   height: 20px;
   border-radius: 10px;
+  font-size: 12px;
   display: flex;
   justify-content: center;
   align-items: center;

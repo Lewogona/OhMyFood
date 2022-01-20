@@ -11,3 +11,11 @@
         @content;
     }
 }
+
+@mixin title-and-logo-only {
+    font-family: "shrikhand", Georgia, 'Times New Roman', Times, serif;
+}
+
+@mixin general-typo {
+    font-family: "roboto", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

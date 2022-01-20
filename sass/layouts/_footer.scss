@@ -1,5 +1,3 @@
-@import "../base/typography";
-
 footer {
     background-color: #353535;
     display: flex;
@@ -10,8 +8,9 @@ footer {
 
 
     p {
-        @extend h1;
+        @include title-and-logo-only;
         color: white;
+        font-size: 20px;
     }
 
     ul{
@@ -24,7 +23,6 @@ footer {
             a{
             display: flex;
             flex-direction: row;
-            @extend h3;
             color: white;
 
                 .icon{
