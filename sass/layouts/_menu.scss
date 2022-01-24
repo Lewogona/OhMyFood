@@ -18,6 +18,17 @@
     .button {
     margin: 30px;
     }
+    p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 291px;
+    }
+    .price{
+        width: inherit;
+        font-weight: bold;
+
+    }
 }
 
 .dish {
@@ -48,8 +59,4 @@
     font-family: "roboto", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-transform: uppercase;
     margin: 15px;
-}
-
-.price {
-    font-weight: bold;
 }

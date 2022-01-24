@@ -154,6 +154,16 @@ footer ul a .icon {
 #menu .button {
   margin: 30px;
 }
+#menu p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 291px;
+}
+#menu .price {
+  width: inherit;
+  font-weight: bold;
+}
 
 .dish {
   display: flex;
@@ -183,10 +193,6 @@ footer ul a .icon {
   font-family: "roboto", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   text-transform: uppercase;
   margin: 15px;
-}
-
-.price {
-  font-weight: bold;
 }
 
 #restaurants {
