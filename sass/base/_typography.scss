@@ -20,7 +20,7 @@ h2 {
 
 h3 {
     @include general-typo;
-    font-size: 19px;
+    font-size: 20px;
 }
 
 h4 {
@@ -31,5 +31,5 @@ h4 {
 
 p, div {
     @include general-typo;
-    font-size: 17px;
+    font-size: 16px;
 }

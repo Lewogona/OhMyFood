@@ -58,7 +58,7 @@ h2 {
 
 h3 {
   font-family: "roboto", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  font-size: 19px;
+  font-size: 20px;
 }
 
 h4 {
@@ -69,7 +69,7 @@ h4 {
 
 p, div {
   font-family: "roboto", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  font-size: 17px;
+  font-size: 16px;
 }
 
 #head-page {
@@ -188,11 +188,20 @@ footer ul a .icon {
   flex-direction: row;
   justify-content: space-between;
 }
-
-.title {
+.dish .title {
   font-family: "roboto", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   text-transform: uppercase;
-  margin: 15px;
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
+.underline {
+  width: 40px;
+  height: 3px;
+  background-color: #99E2D0;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  margin-top: 7px;
 }
 
 #restaurants {
