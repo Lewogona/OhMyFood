@@ -7,6 +7,7 @@
     border-radius: 40px 40px 0 0;
     position: relative;
     top: -40px;
+
     header {
         display: flex;
         flex-direction: row;
@@ -15,57 +16,85 @@
         width: 100%;
         padding: 20px;
     }
-    .button {
-    margin: 30px;
-    }
-    p {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        width: 291px;
-    }
-    .price{
-        width: inherit;
-        font-weight: bold;
 
-    }
-}
-
-.dish {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 100%;
-    .card {
-        background-color: $background-colour-card;
-        box-shadow: 0px 3px 10px rgb(209, 209, 209);
-        border-radius: 15px;
-        height: 65px;
-        padding: 10px;
-        margin: 15px;
-        margin-top: inherit;
+    .dish {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        &__body {
+        justify-content: space-around;
+        width: 100%;
+        .title {
+            text-transform: uppercase;
+            margin-left: 15px;
+            margin-top: 20px;
+        }
+        .underline {
+            width: 40px;
+            height: 3px;
+            background-color: $colour-tertiary;
+            margin-left: 15px;
+            margin-bottom: 15px;
+            margin-top: 7px;
+        }
+
+        .card {
+            background-color: $background-colour-card;
+            box-shadow: 0px 3px 10px rgb(209, 209, 209);
+            border-radius: 15px;
+            height: 65px;
+            margin: 15px;
+            margin-top: inherit;
+            overflow: hidden;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            padding: 10px;
+            &__body {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            p {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                width: 291px;
+            }
+            .price{
+                font-weight: bold;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                width: 30px;
+                position: relative;
+                left: 35%;
+                transition: transform 330ms ease-in-out;
+            }
+            .check-box {
+                background-color: $colour-tertiary;
+                width: 65px;
+                height: 65px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-size: 30px;
+                position: relative;
+                left: 75px;
+                top: -10px;
+                transition: transform 330ms ease-in-out;
+            }
         }
     }
-    .title {
-        font-family: "roboto", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        text-transform: uppercase;
-        margin-left: 15px;
-        margin-top: 20px;
+
+    .button {
+        margin: 30px;
     }
 }
 
-.underline {
-    width: 40px;
-    height: 3px;
-    background-color: $colour-tertiary;
-    margin-left: 15px;
-    margin-bottom: 15px;
-    margin-top: 7px;
+.card:hover .check-box {
+    transform: translate(-65px, 0);
+}
+
+.card:hover .price {
+    transform: translate(-65px, 0);
 }
