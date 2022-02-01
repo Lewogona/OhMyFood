@@ -1,4 +1,4 @@
-#operation{
+#operation-section{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -8,12 +8,45 @@
     padding-left: 20px;
     padding-right: 20px;
     background-color: $background-colour-card;
+    @include not-on-mobile {
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 180px;
+    }
+    @include tablet-only {
+        height: 330px;
+    }
+    h2 {
+        @include not-on-mobile {
+            width: 100%;
+        }
+    }
 }
 
-.operation__step{
+.operation-step{
     display: flex;
     flex-direction: row;
-    .card{
+    @include desktop-only {
+        width: 280px;
+    }
+    @include tablet-only {
+        width: 300px;
+    }
+    &__number{
+        background-color: $colour-primary;
+        color: white;
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 27.5px;
+        left: 8.5px;
+    }
+    &__card{
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -39,17 +72,3 @@
     }
 }
 
-.number{
-    background-color: $colour-primary;
-    color: white;
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-    font-size: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 27.5px;
-    left: 8.5px;
-}
