@@ -98,3 +98,12 @@
 .card:hover .price {
     transform: translate(-65px, 0);
 }
+
+.card:hover .fa-check-circle {
+    transform: rotate(1turn);
+}
+
+.fa-check-circle {
+    transition: transform 450ms ease-in-out;
+    animation-fill-mode: forwards;
+}
