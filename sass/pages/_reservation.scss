@@ -12,4 +12,7 @@
     p {
         text-align: center;
     }
+    @include not-on-mobile {
+        height: 225px;
+    }
 }
