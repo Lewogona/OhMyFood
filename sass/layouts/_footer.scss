@@ -5,30 +5,32 @@ footer {
     justify-content: space-between;
     height: 190px;
     padding: 20px;
-
-
+    @include not-on-mobile {
+        align-items: center;
+    }
     p {
         @include title-and-logo-only;
         color: white;
         font-size: 20px;
     }
-
     ul{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         height: 120px;
         padding-bottom: 10px;
-
-            a{
+        a{
             display: flex;
             flex-direction: row;
             color: white;
-
-                .icon{
-                    margin-right: 10px;
-                    width: 20px;
-                }
+            width: 100%;
+            @include not-on-mobile {
+                justify-content: center;
             }
+            .icon{
+                margin-right: 10px;
+                width: 20px;
+            }
+        }
     }
 }
