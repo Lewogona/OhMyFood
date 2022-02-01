@@ -67,7 +67,7 @@
                 width: 30px;
                 position: relative;
                 left: 35%;
-                transition: transform 330ms ease-in-out;
+                transition: transform 300ms ease-in-out;
             }
             .check-box {
                 background-color: $colour-tertiary;
@@ -81,7 +81,7 @@
                 position: relative;
                 left: 75px;
                 top: -10px;
-                transition: transform 330ms ease-in-out;
+                transition: transform 300ms ease-in-out;
             }
         }
     }
@@ -104,6 +104,6 @@
 }
 
 .fa-check-circle {
-    transition: transform 450ms ease-in-out;
+    transition: transform 330ms 100ms ease-in-out;
     animation-fill-mode: forwards;
 }

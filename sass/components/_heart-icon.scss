@@ -14,7 +14,7 @@
     animation-fill-mode: forwards;
 }
 
-.icon-heart:hover .not-clicked {
+.icon-heart:hover .not-clicked, .icon-heart:active .not-clicked {
     opacity: 0;
 }
 
@@ -28,6 +28,6 @@
     animation-fill-mode: forwards;
 }
 
-.icon-heart:hover .when-clicked {
+.icon-heart:hover .when-clicked, .icon-heart:active .when-clicked {
     opacity: 1;
 }
