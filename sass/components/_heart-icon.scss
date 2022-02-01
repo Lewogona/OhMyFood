@@ -1,0 +1,33 @@
+.icon-heart {
+    display: flex;
+    align-items: center;
+    .fa-heart {
+        font-size: 30px;
+    }
+}
+
+.not-clicked {
+    position: relative;
+    left: 30px;
+    opacity: 1;
+    transition: opacity 300ms ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.icon-heart:hover .not-clicked {
+    opacity: 0;
+}
+
+.when-clicked{
+    background: -webkit-linear-gradient($colour-primary, $colour-secondary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.icon-heart:hover .when-clicked {
+    opacity: 1;
+}
