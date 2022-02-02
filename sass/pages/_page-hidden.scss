@@ -1,0 +1,19 @@
+#page-hidden {
+    animation-name: second-page;
+    animation-duration: 3100ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes second-page{
+    from {
+        visibility: hidden;
+    }
+    95% {
+        visibility: hidden;
+    }
+    to {
+        visibility: visible;
+        position: relative;
+        top: -940px;
+    }
+}
