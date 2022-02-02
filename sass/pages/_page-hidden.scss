@@ -2,6 +2,8 @@
     animation-name: second-page;
     animation-duration: 3100ms;
     animation-fill-mode: forwards;
+    position: absolute;
+    z-index: 2;
 }
 
 @keyframes second-page{
@@ -13,7 +15,5 @@
     }
     to {
         visibility: visible;
-        position: relative;
-        top: -940px;
     }
 }
