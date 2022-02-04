@@ -30,10 +30,13 @@
 
 #text-animation {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    // width: 60%
+    text-align: center;
+    @include not-on-mobile {
+        flex-direction: row;
+    }
 }
 
 .fa-spinner {
@@ -94,10 +97,10 @@
     from {
         opacity: 0;
     }
-    40% {
+    37% {
         opacity: 0;
     }
-    43% {
+    40% {
         opacity: 1;
     }
     to {
@@ -117,7 +120,7 @@
     65% {
         opacity: 0;
     }
-    78% {
+    68% {
         opacity: 1;
     }
     to {
