@@ -1,0 +1,20 @@
+.restaurant-prev__image {
+    position: relative;
+}
+
+.new {
+    height: 30px;
+    width: 80px;
+    border-radius: 3px;
+    background-color: $colour-tertiary;
+    color: #008766;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+
