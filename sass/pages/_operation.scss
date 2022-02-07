@@ -11,10 +11,7 @@
     @include not-on-mobile {
         flex-direction: row;
         flex-wrap: wrap;
-        height: 180px;
-    }
-    @include tablet-only {
-        height: 330px;
+        height: auto;
     }
     h2 {
         @include not-on-mobile {
@@ -26,10 +23,7 @@
 .operation-step{
     display: flex;
     flex-direction: row;
-    @include desktop-only {
-        width: 280px;
-    }
-    @include tablet-only {
+    @include not-on-mobile {
         width: 300px;
     }
     &__number{
@@ -54,6 +48,7 @@
         height: 75px;
         width: 100%;
         margin: auto;
+        margin-bottom: 20px;
         border-radius: 25px;
         box-shadow: 0px 3px 10px rgb(209, 209, 209);
         font-weight: bold;
