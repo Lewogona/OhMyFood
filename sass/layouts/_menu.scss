@@ -138,10 +138,10 @@
 }
 
 .dish__card:hover .body-animation {
-    animation: hide-when-to-big $animation-card forwards;
+    animation: hide-when-too-big $animation-card forwards;
 }
 
-@keyframes hide-when-to-big {
+@keyframes hide-when-too-big {
     0% {
         width: 100%;
     }
