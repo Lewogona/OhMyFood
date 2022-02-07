@@ -2,7 +2,7 @@ footer {
     background-color: #353535;
     @include column;
     height: 190px;
-    padding: 20px;
+    padding: $padding-big;
     @include not-on-mobile {
         align-items: center;
     }
@@ -14,7 +14,7 @@ footer {
     ul{
         @include column;
         height: 120px;
-        padding-bottom: 10px;
+        padding-bottom: $padding-small;
         a{
             @include row;
             justify-content: inherit;

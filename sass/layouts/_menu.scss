@@ -10,7 +10,7 @@
         @include row;
         align-items: center;
         width: 100%;
-        padding: 20px;
+        padding: $padding-big;
         @include not-on-mobile {
             width: 90%;
             margin: auto;
@@ -46,7 +46,7 @@
             margin-top: inherit;
             overflow: hidden;
             @include row;
-            padding: 10px;
+            padding: $padding-small;
             position: relative;
             @include not-on-mobile {
                 width: 80%;
