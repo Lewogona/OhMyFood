@@ -1,8 +1,7 @@
 #loading-animation{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include all-centered;
     width: 100%;
     height: 100%;
     background-color: #b1b1b1;
@@ -31,8 +30,7 @@
 #text-animation {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include all-centered;
     text-align: center;
     @include not-on-mobile {
         flex-direction: row;

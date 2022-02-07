@@ -2,8 +2,7 @@
     background-color: #EAEAEA;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    @include all-centered;
     height: 50px;
     box-shadow: inset 0px 3px 3px rgb(209, 209, 209);
 }
