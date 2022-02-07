@@ -42,7 +42,7 @@
     color: $colour-tertiary;
     text-shadow: 5px 5px 5px grey;
     animation: spinner 800ms ease-in-out infinite;
-    margin-top: 20px;
+    margin-top: $margin-big;
 }
 
 @keyframes spinner {
