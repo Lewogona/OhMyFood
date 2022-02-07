@@ -22,6 +22,7 @@
     border-radius: $border-radius-general;
     box-shadow: $box-shadow;
     overflow: hidden;
+    position: relative;
     @include not-on-mobile {
         width: 46%;
     }
@@ -34,5 +35,10 @@
     &__body {
         @include row;
         padding: $padding-small;
+    }
+    .icon-heart {
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
     }
 }
