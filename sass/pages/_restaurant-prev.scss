@@ -22,7 +22,7 @@
     margin: auto;
     height: 200px;
     border-radius: $border-radius-general;
-    box-shadow: 0px 3px 10px rgb(209, 209, 209);
+    box-shadow: $box-shadow;
     overflow: hidden;
     @include not-on-mobile {
         width: 46%;

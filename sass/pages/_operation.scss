@@ -44,7 +44,7 @@
         margin: auto;
         margin-bottom: $margin-big;
         border-radius: 25px;
-        box-shadow: 0px 3px 10px rgb(209, 209, 209);
+        box-shadow: $box-shadow;
         font-weight: bold;
         &:hover {
             background-color: #F5EDFF;
