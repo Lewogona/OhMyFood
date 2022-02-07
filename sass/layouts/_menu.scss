@@ -26,10 +26,6 @@
         flex-direction: column;
         justify-content: space-around;
         width: 100%;
-        opacity: 0;
-        position: relative;
-        top: 50px;
-        animation: appearance-delay__card 500ms forwards ease-in-out;
         @include not-on-mobile {
             width: 90%;
             margin: auto;
@@ -81,11 +77,6 @@
                 flex-direction: column;
                 justify-content: flex-end;
                 width: 30px;
-                position: absolute;
-                right: 10px;
-                bottom: 10px;
-                transition: transform 300ms 50ms ease-in-out;
-                overflow: hidden;
             }
             &--check-box {
                 background-color: $colour-tertiary;
@@ -96,10 +87,6 @@
                 align-items: center;
                 color: white;
                 font-size: 25px;
-                position: absolute;
-                top: 0px;
-                right: -65px;
-                transition: transform 300ms 50ms ease-in-out;
             }
         }
     }
@@ -109,25 +96,19 @@
     }
 }
 
-.dish__card:hover .dish__card--check-box {
-    transform: translate(-65px, 0);
+// ---------- ANIMATION
+
+.dish-animation {
+    position: relative;
+    top: 50px;
+    opacity: 0;
+    animation: appearance-delay__card 500ms forwards ease-in-out;
 }
 
-.dish__card:hover .dish__card--price {
-    transform: translate(-65px, 0);
-}
-
-.dish__card:hover .fa-check-circle {
-    transform: rotate(1turn);
-}
-
-.fa-check-circle {
-    transition: transform 330ms 100ms ease-in-out;
-    animation-fill-mode: forwards;
-}
-
-.dish__card:hover .dish__card--body {
-    animation: hide-when-to-big 300ms 50ms ease-in-out forwards;
+@for $i from 0 to 4 {
+    .dish-animation:nth-child(#{$i + 1}) {
+        animation-delay: calc(250ms*$i) !important;
+    }
 }
 
 @keyframes appearance-delay__card {
@@ -140,10 +121,39 @@
     }
 }
 
-@for $i from 0 to 4 {
-    .dish:nth-child(#{$i + 1}) {
-        animation-delay: calc(250ms*$i) !important;
-    }
+.price-animation {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    transition: transform 300ms 50ms ease-in-out;
+}
+
+.dish__card:hover .price-animation {
+    transform: translate(-65px, 0);
+}
+
+.check-animation {
+    position: absolute;
+    top: 0px;
+    right: -65px;
+    transition: transform 300ms 50ms ease-in-out;
+}
+
+.dish__card:hover .check-animation {
+    transform: translate(-65px, 0);
+}
+
+.fa-check-circle {
+    transition: transform 330ms 100ms ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.dish__card:hover .fa-check-circle {
+    transform: rotate(1turn);
+}
+
+.dish__card:hover .body-animation {
+    animation: hide-when-to-big 300ms 50ms ease-in-out forwards;
 }
 
 @keyframes hide-when-to-big {
