@@ -17,6 +17,7 @@ footer {
         padding-bottom: 10px;
         a{
             @include row;
+            justify-content: inherit;
             color: white;
             width: 100%;
             @include not-on-mobile {
