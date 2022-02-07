@@ -62,7 +62,8 @@
             &--price{
                 font-weight: bold;
                 @include column;
-                width: 30px;
+                width: 40px;
+                align-items: center;
             }
             &--check-box {
                 background-color: $colour-tertiary;
@@ -108,7 +109,7 @@
 
 .price-animation {
     position: absolute;
-    right: 10px;
+    right: 5px;
     bottom: 10px;
     transition: transform $animation-card;
 }
@@ -137,15 +138,12 @@
     transform: rotate(1turn);
 }
 
-.dish__card:hover .body-animation {
-    animation: hide-when-too-big $animation-card forwards;
+.body-animation {
+    width: 100%;
+    transition: width $animation-card;
 }
 
-@keyframes hide-when-too-big {
-    0% {
-        width: 100%;
-    }
-    100% {
-        width: calc(100% - 100px);
-    }
+.dish__card:hover .body-animation {
+    width: calc(100% - 95px);
+    transition: width $animation-card;
 }
