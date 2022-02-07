@@ -30,17 +30,16 @@
         position: relative;
         top: 50px;
         animation: appearance-delay__card 500ms forwards ease-in-out;
-
         @include not-on-mobile {
             width: 90%;
             margin: auto;
         }
-        .title {
+        &__title {
             text-transform: uppercase;
             margin-left: 15px;
             margin-top: 20px;
         }
-        .underline {
+        &__underline {
             width: 40px;
             height: 3px;
             background-color: $colour-tertiary;
@@ -48,8 +47,7 @@
             margin-bottom: 15px;
             margin-top: 7px;
         }
-
-        .card {
+        &__card {
             background-color: $background-colour-card;
             box-shadow: 0px 3px 10px rgb(209, 209, 209);
             border-radius: 15px;
@@ -67,17 +65,17 @@
                 margin: auto;
                 margin-top: 15px;
             }
-            &__body {
+            &--body {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
+                p, h4 {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
             }
-            p, h4 {
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-            }
-            .price{
+            &--price{
                 font-weight: bold;
                 display: flex;
                 flex-direction: column;
@@ -89,7 +87,7 @@
                 transition: transform 300ms 50ms ease-in-out;
                 overflow: hidden;
             }
-            .check-box {
+            &--check-box {
                 background-color: $colour-tertiary;
                 width: 65px;
                 height: 65px;
@@ -111,15 +109,15 @@
     }
 }
 
-.card:hover .check-box {
+.dish__card:hover .dish__card--check-box {
     transform: translate(-65px, 0);
 }
 
-.card:hover .price {
+.dish__card:hover .dish__card--price {
     transform: translate(-65px, 0);
 }
 
-.card:hover .fa-check-circle {
+.dish__card:hover .fa-check-circle {
     transform: rotate(1turn);
 }
 
@@ -128,7 +126,7 @@
     animation-fill-mode: forwards;
 }
 
-.card:hover .card__body {
+.dish__card:hover .dish__card--body {
     animation: hide-when-to-big 300ms 50ms ease-in-out forwards;
 }
 
