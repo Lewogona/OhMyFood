@@ -33,9 +33,7 @@
             width: 40px;
             height: 3px;
             background-color: $colour-tertiary;
-            margin-left: $margin-general;
-            margin-bottom: $margin-general;
-            margin-top: 7px;
+            margin: 7px 0 $margin-general $margin-general;
         }
         &__card {
             background-color: $background-colour-card;
@@ -112,7 +110,7 @@
     position: absolute;
     right: 10px;
     bottom: 10px;
-    transition: transform 300ms 50ms ease-in-out;
+    transition: transform $animation-card;
 }
 
 .dish__card:hover .price-animation {
@@ -123,7 +121,7 @@
     position: absolute;
     top: 0px;
     right: -65px;
-    transition: transform 300ms 50ms ease-in-out;
+    transition: transform $animation-card;
 }
 
 .dish__card:hover .check-animation {
@@ -140,7 +138,7 @@
 }
 
 .dish__card:hover .body-animation {
-    animation: hide-when-to-big 300ms 50ms ease-in-out forwards;
+    animation: hide-when-to-big $animation-card forwards;
 }
 
 @keyframes hide-when-to-big {
