@@ -1,17 +1,13 @@
 #menu {
     background-color: $background-colour;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    @include column;
     align-items: center;
     border-radius: 40px 40px 0 0;
     position: relative;
     top: -40px;
     
     header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        @include row;
         align-items: center;
         width: 100%;
         padding: 20px;
@@ -22,9 +18,7 @@
     }
 
     .dish {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        @include column;
         width: 100%;
         @include not-on-mobile {
             width: 90%;
@@ -51,9 +45,7 @@
             margin: 15px;
             margin-top: inherit;
             overflow: hidden;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+            @include row;
             padding: 10px;
             position: relative;
             @include not-on-mobile {
@@ -62,9 +54,7 @@
                 margin-top: 15px;
             }
             &--body {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
+                @include column;
                 p, h4 {
                     white-space: nowrap;
                     overflow: hidden;
@@ -73,9 +63,7 @@
             }
             &--price{
                 font-weight: bold;
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-end;
+                @include column;
                 width: 30px;
             }
             &--check-box {

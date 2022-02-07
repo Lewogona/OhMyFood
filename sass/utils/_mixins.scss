@@ -19,3 +19,15 @@
 @mixin general-typo {
     font-family: "roboto", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+@mixin column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@mixin row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

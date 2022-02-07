@@ -34,9 +34,7 @@
         border-radius: 15px 15px 0 0;
     }
     &__body {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        @include row;
         padding: 10px;
     }
 }
