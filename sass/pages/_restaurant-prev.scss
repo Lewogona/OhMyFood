@@ -1,7 +1,5 @@
 #restaurants{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    @include column;
     height: 1000px;
     padding: $padding-big;
     @include not-on-mobile {

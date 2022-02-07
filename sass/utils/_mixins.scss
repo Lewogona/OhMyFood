@@ -36,3 +36,10 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin text-gradient {
+    background: -webkit-linear-gradient($colour-primary, $colour-secondary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

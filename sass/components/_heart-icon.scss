@@ -19,10 +19,7 @@
 }
 
 .when-clicked{
-    background: -webkit-linear-gradient($colour-primary, $colour-secondary);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @include text-gradient;
     opacity: 0;
     transition: opacity 500ms ease-in-out;
     animation-fill-mode: forwards;
