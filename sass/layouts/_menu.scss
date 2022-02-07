@@ -92,7 +92,7 @@
 
 @for $i from 0 to 4 {
     .dish-animation:nth-child(#{$i + 1}) {
-        animation-delay: calc(250ms*$i) !important;
+        animation-delay: calc(250ms*$i);
     }
 }
 
