@@ -40,7 +40,7 @@
         &__card {
             background-color: $background-colour-card;
             box-shadow: 0px 3px 10px rgb(209, 209, 209);
-            border-radius: 15px;
+            border-radius: $border-radius-general;
             height: 65px;
             margin: 15px;
             margin-top: inherit;
