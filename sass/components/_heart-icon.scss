@@ -7,10 +7,11 @@
 
 .not-clicked {
     position: relative;
-    left: 30px;
+    float: right;
     opacity: 1;
     transition: opacity 300ms ease-in-out;
     animation-fill-mode: forwards;
+    top: 2px;
 }
 
 .icon-heart:hover .not-clicked {
@@ -22,6 +23,8 @@
     opacity: 0;
     transition: opacity 500ms ease-in-out;
     animation-fill-mode: forwards;
+    margin-right: -32px;
+    width: 32px;
 }
 
 .icon-heart:hover .when-clicked {
