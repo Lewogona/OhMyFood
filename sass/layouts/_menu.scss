@@ -62,7 +62,6 @@
             &--price{
                 font-weight: bold;
                 @include column;
-                width: 40px;
                 align-items: center;
             }
             &--check-box {
