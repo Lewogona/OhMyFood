@@ -38,14 +38,6 @@ img {
   object-fit: cover;
 }
 
-@font-face {
-  font-family: "shrikhand";
-  src: url(../police/shrikhand/Shrikhand-Regular.ttf);
-}
-@font-face {
-  font-family: "roboto";
-  src: url(../police/roboto/Roboto-Regular.ttf);
-}
 h1 {
   font-family: "shrikhand", Georgia, "Times New Roman", Times, serif;
   font-size: 28px;
